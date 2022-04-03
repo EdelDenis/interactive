@@ -12,17 +12,17 @@
     <h1 id="heading">Hello!</h1>
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script>
+
       let leftOffset = 0;
-      let moveHeading = function(){
-          $("#heading").offset({left: leftOffset});
-      
+      let moveHeading = function () {
+          $("#heading").offset ({left: leftOffset});
           leftOffset++;
-          if(leftOffset > 200){
+          if(leftOffset>200){
               leftOffset = 0;
           }
       };
 
-      setInterval (moveHeading , 30);
+      setInterval (moveHeading,30);
       
     </script>
 </body>
